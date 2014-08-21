@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 1st August 2004), see www.w3.org" />
+  <meta content="text/html; charset=utf-8" />
+  <meta name="keywords" content="Eressea" />
+  <meta name="author" content="Eressea PbeM - http://www.eressea.de/" />
+  <meta name="abstract" content="Eressea Documentation - Skills" />
+
+  <title>Skills</title>
+  <link rel="stylesheet" type="text/css" href="eressea.css" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#F82866" vlink="#0000DA" alink=
+"#F82866">
+
+  <h1>Skills</h1>
+  <h2>Overview</h2>
+
+  <p>All units need skills to produce or use items, gather knowledge about
+  magic or special information of regions etc. Skills are always accounted on
+  a per-unit basis, i.e. all members of a unit have the same skills. Skills
+  can be acquired and improved by learning them, some skills also improve
+  when being used.</p>
+
+  <p>The progress of learning a skill is measured in a so-called <em>skill
+  level</em> which is recorded for every skill the unit masters. A skill
+  level of 0 usually means that the unit is not experienced in that skill and
+  thus cannot apply it. The higher the skill level the better a unit masters
+  that skill.</p>
+
+  <p>Only Aquarians can <a href="orders.html#LEARN">LEARN</a> on a ship which is
+  on the ocean. If the ship is at land, all passengers can do something, except
+  for the captain of the ship, should he wish to sail somewhere. Pay attention
+  to the fact that men on the ship cannot <a href="orders.html#WORK">WORK</a>,
+  <a href="orders.html#ENTERTAIN">ENTERTAIN</a>
+  if the region is guarded by an un-allied faction.</p>
+
+  <h2>Learning</h2>
+
+  <p>A unit can try to advance in a skill by spending a turn learning it
+  using the <a href="orders.html#LEARN"><tt>LEARN</tt></a> order. Learning a
+  skill for a turn is not equivalent to reaching a new skill level since it
+  becomes more and more difficult to advance in a skill with higher levels,
+  i.e. the unit has to learn longer for each new skill level.</p>
+
+  <p>Basically, a unit has to learn for as many turns as the value of the
+  next skill level it can reach to actually acquire this level. Thus a unit
+  at skill level 0 has to learn on average for 1 week to reach level 1.
+  Getting to level 2 now takes another 2 weeks on average, acquiring level 3
+  another 3 weeks and so on.</p>
+
+  <p>Your units can have good or bad luck with learning and the duration of
+  gaining a new skill level may vary somewhat but on average you can stick to
+  the above rule. How long your units have to learn for certain skill levels
+  also depends on the skill modifiers of your race.</p>
+
+  <h2>Skill Modifiers</h2>
+
+  <p>All races have different <a href="races.html#modifiers">modifiers</a> on
+  their skills (have a look at the <a href="races.html#profiles">race
+  profiles</a> on how race and terrain affect skills and learning). A
+  positive skill modifier makes it easier for units of that race to learn or
+  apply a skill, a negative modifier makes it harder, respectively.</p>
+
+  <p>The effective skill level is calculated simply by adding the modifier to
+  the skill level acquired by learning the skill. Usually, the effective
+  skill level is your daily bread and butter: it is listed in your report and
+  accounted for when applying skills, i.e. producing items, building ships,
+  fighting etc. So in general, these rules always refer to the modified skill
+  level if not stated otherwise.</p>
+
+  <p>Take a freshly recruitet Dwarven unit for example:<br />
+  At first it has no skills at all but to earn some money it needs to learn
+  the taxation skill which it has a modifier of +1 for. Without learning,
+  this modifier doesn't buy the unit anything, it still has to learn at least
+  for one turn and thus reach skill level 1. Now the modifier comes into play
+  - its value is added to the skill level reached through learning so the
+  effective skill level is 2. This modified skill level is what the unit can
+  actually make use of: in this case when taxing the peasants it is accounted
+  a skill level of 2 instead of 1.</p>
+
+  <p>Obviously, skill modifiers influence how quickly a unit can reach a
+  certain skill level. E.g. Dwarfs need to learn the taxation skill only once
+  to reach a skill level of 2 while Elves (with a modifier of 0) need to
+  reach levels 1 and 2 successively taking them 3 weeks on average to get
+  there.</p>
+
+  <p>With a negative modifier things are essentially the same: a Halfling
+  unit learning taxation for one turn would reach skill level 1 without
+  taking the modifier into account. Unfortunately, Halflings have a pretty
+  lousy physique to make much of an impression on peasants (actually, anyone)
+  to get taxes out of them so their modifier on taxation is -1. Thus, one
+  turn of learning does not get them anywhere, they still have an effective
+  skill level of 0 (which might not show up in your report, still the Eressea
+  server records it). The unit has to learn for another two weeks (on
+  average, as always) to reach an effective skill level of 1 while that
+  amount of learning would suffice for level 2 with Elves and level 3 with
+  Dwarfes.</p>
+
+  <h2>Applying Skills</h2>
+
+  <p>In most cases it should be obvious which skill you require for which
+  action in Eressea; details are listed below. Most skills a unit can
+  actively use or apply (e.g. production skills) improve through such usage.
+  But this is a rather slow process - on average it takes three times longer
+  to reach the next skill level compared to learning.</p>
+
+  <h2>Teaching</h2>
+
+  <p>In Eressea, highly trained units can pass their experience to units with
+  lower skill levels which cuts the time they spend learning for a skill
+  level by half. For this to work the teaching unit uses the <a href=
+  "orders.html#TEACH"><tt>TEACH &lt;unit-id&gt; [&lt;unit-id&gt;
+  ...]</tt></a> order specifying the pupil units it wants to teach and the
+  pupil unit uses the <a href="orders.html#LEARN"><tt>LEARN skill</tt></a>
+  order with the skill to learn. The teacher does not specify the skill he
+  wants to train a pupil in as this is determined by the pupil's order. Thus
+  a teacher could even teach different pupil units in different skills.</p>
+
+  <p>Teaching comes with these restrictions: the skill level of the teaching
+  unit has to exceed the unit's skill level by at least 2 levels. Furthermore
+  a teacher can share his knowledge with up to ten pupils, thus common
+  combinations of teacher-to-pupil unit sizes are 1 to 10 or 10 to 100. When
+  more than ten pupils try to benefit from a teacher their progress in
+  learning is reduced proportionally.</p>
+
+  <h2>Transferring and Recruiting Men</h2>
+
+  <p>When men are added to a unit, these men bring their knowledge or their
+  inexperience with them, which can lead to a <em>dilution</em> of the unit's
+  skills.</p>
+
+  <p>To determine a skill level after adding men to a unit calculate the
+  average of the original skill levels weighted with the amount of men: when
+  a unit with 2 fighters at a melee skill level of 3 recruits one peasant
+  (which is treated as if a person with skill level 0 is added to the unit),
+  the resulting skill level of that unit is <tt>(&lt;existing men&gt; *
+  &lt;skill level&gt; + &lt;added men&gt; * &lt;skill level&gt;) / &lt;total
+  men&gt;</tt>, i.e. <tt>(2 * 3 + 1 * 0) / 3 = 2</tt>.</p>
+
+  <h2>Expensive Skills</h2>
+
+  <p>The skills magic, alchemy, herbalism, espionage, and tactics are all
+  difficult to learn, hence you must pay to learn them. Espionage costs 100
+  silver per man for a week of training. Alchemy, herbalism, and tactics each
+  cost 200 silver per man for a week of training. The costs for learning
+  magic increase with skill level. You start with a cost of 100 silver, and
+  may end up with a training cost of over 1000 silver. This <a href=
+  "magic.html">table</a> shows the costs for increasing magic from level 0 to
+  level 20. It does not matter if the unit has a teacher or not (although if
+  it does, it will gain 60 skill points). The unit which wants to learn (or
+  be taught) must have all the silver in its possession.</p>
+
+  <p>If the unit does not have the full amount of silver it's progress in
+  learning is reduced proportionally.</p>
+
+  <h2>Miscellaneous details about certain skills</h2>
+
+  <h3>Production of resources and objects</h3>
+
+  <p>All items and resources are made with the <a href=
+  "orders.html#MAKE">MAKE</a> order. Most resources only need the appropriate
+  region and skill level 1 to be produced. Most objects and items need higher
+  skill levels. This <a href="production.html#ITEMS">table</a> lists all
+  resources and objects, and what skills and resources are need to produce
+  them.</p>
+
+  <p>To produce an item, you must give a a unit the <a href=
+  "orders.html#MAKE">MAKE</a> "&lt;object name&gt;" order. For example, MAKE
+  "iron", MAKE "sword", etc. You can also specify how many objects should be
+  produced by putting the number between the MAKE order and the object name.
+  For example, MAKE 10 "shield". The unit will produce 10 shields if there is
+  enough iron and it has the necessary level of skill in armoursmithing (i.e.
+  2), and the combined total skill levels needed (i.e. 20 total, such as 10
+  men with skill level 2 each, or 2 men with skill level 10
+  each).</p><a name="stealth" id="stealth"></a> <a name="espionage" id=
+  "espionage"></a>
+
+  <h3>Perception, Stealth and Espionage</h3>
+
+  <p>The stealth skill can hide units, but if this unit is used to guard a
+  region, or is on a ship or in a building, it will never be hidden, and is
+  always visible.</p>
+
+  <p>Other units can spot hidden units using the perception skill. A unit
+  cannot be seen if the stealth skill level is greater than the perception
+  skill level of another unit. In this case, the stealthy unit is invisible
+  to the other unit. A unit if displayed if the perception skill level of
+  your unit is as high or greater than the stealth skill level of another
+  unit.</p>
+
+  <p>Successfully hidden units can steal silver form other units with the
+  <a href="orders.html#STEAL">STEAL</a> order. To discover the theft, the
+  unit with the highest skill level in perception is compared with the
+  stealth skill level of the robber. If the stealth level is as high as the
+  perception level, the victim is only told that money has been stolen. If
+  the perception level is greater than the stealth level, the victim gets
+  detailed information about the theft, such as the indentity of the
+  robber.</p>
+
+  <p>A unit with a stealth skill level that is at least 3 levels above the
+  highest sieging unit's perception level can leave the sieged castle at
+  will. The most common use of this is to smuggle silver inside to feed the
+  inhabitants.</p>
+
+  <p>With the <a href="orders.html#SPY">SPY</a> order, you can receive
+  information about another faction's units. The espionage level of the
+  spying unit is compared with the added skill values of perception and
+  stealth of the target unit. If the espoinate level of the spy is lower than
+  combined value of the two skill, the spy learns nothing. If the two values
+  are equal to the espionage level, the spy learns what skills the target
+  unit has, but not their levels. If the espionage level is greater than the
+  combined value, the spy learns both the skills and their skill levels. Any
+  successful attempt also reveals the faction the target unit belongs to.</p>
+
+  <p>Then the perception skill level of the victim is compared with the
+  stealth skill level of the spy. If the perception level is less than the
+  stealth level, the victim learns nothing. If these skills are equal, then
+  the victim knows he was spied upon, but not by whom. If the perception
+  level is greater than the stealth level, the victim receives information
+  about which unit spied upon him.</p>
+
+  <p>It costs 100 silver per person per week to learn espionage. Successfully
+  using the stealth or espionate skills makes the unit more experienced in
+  them.</p>
+
+  <h3>Walking, Riding, Sailing and Shipcraft</h3>
+
+  <p>There are many means to travel between regions. Walking, riding,
+  sailing, etc. The <a href="orders.html#MOVE">MOVE</a> order controls all of
+  these.</p>
+
+  <p>A unit does not need any special abilities for walking. In order to ride
+  horses, a unit needs the riding skill. The advantage to riding horses is
+  that a unit can both go further and carry more, especially when using
+  carts.</p>
+
+  <p>You will need a unit with the taming skill to catch wild horses and the
+  cartmaking skill to make carts. Use the <a href="orders.html#MAKE">MAKE
+  "horse" and MAKE "cart"</a> orders respectively.</p>
+
+  <p>A unit with the riding skill can ride/lead two horses per person per
+  skill level. Every two horses can lead a cart, so that large amounts of
+  products can be transported between regions. If a unit uses carts, the
+  persons in the unit sit in the cart, and not on the horses. Therefore, the
+  weight of the unit's members is subtracted from the cart's carrying
+  capacity.</p>
+
+  <p>In order to sail, a unit needs both a ship and the sailing skill. The
+  shipcraft skill is used to make boats from wood.</p>
+
+  <p>The captain is the unit that steers a ship. It must have a certain skill
+  level to sail different size vessels. This <a href=
+  "travel.html#SAILING">table</a> lists the various ship types and the skills
+  required to sail. The remaining skill needed to sail a vessel can come from
+  any source. A trireme and a captain with level 4 sailing and 116 sailors
+  with sailling 1, is just as good as the same captain with 20 men and
+  sailing level 6.</p>
+
+  <h3>Masonry and Roadwork</h3>
+
+  <p>There are many buildings with various functions in Eressea. For example,
+  castles, smithies, sawmilles, and lighthouses. To build any of these, you
+  need a unit with the masonry skill and the appropriate resources for
+  construction.</p>
+
+  <p>A castle is built with the <a href="orders.html#MAKE">MAKE CASTLE</a>
+  order. Any other kind of building is constructed with the <a href=
+  "orders.html#MAKE">MAKE "&lt;building type&gt;"</a> order. A smithy, for
+  example, would be build with the MAKE "smithy" order. You will need stone
+  to build a castle. Most other types of buildings require wood, iron, and
+  silver. Mage Towers even require Laen and Mallorn wood.</p>
+
+  <p>You can also build roads to speed travel between regions. With the
+  roadwork skill, you can build roads and bridges so that units can travel
+  more than one region per turn. In some regions, you will need to build
+  special buildings before you can build roads: Swamps require a dam, Deserts
+  require a caravanserai, and Glaciers require a tunnel.</p>
+
+  <h3>Magic</h3>
+
+  <p>You can also use and experiment with spells using the magic skill.
+  Spells fall into several categories, combat, ship, normal, etc. Each
+  faction is only allowed to have up to 3 magicians, although Elves are
+  allowed to have 4 as a special ability. It costs at least 100 silver per
+  person per week to learn magic. See this <a href=
+  "magic.html#MAGICCOSTS">table</a> for the costs of learning magic at all
+  skill levels.</p>
+
+  <p>You cast spells with the <a href="orders.html#CAST">CAST</a> order. You
+  also use this order to make magical items.</p>
+
+  <h3>Alchemy and Herbalism</h3>
+
+  <p>A unit needs the herbalism skill to search for herbs. In every region a
+  certain kind of herb is available. A unit can find about one herb per skill
+  level and person.</p>
+
+  <p>Units need the alchemy skill to turn those herbs into potions. Learning
+  these skills costs 200 silver per person per week. Only 3 alchemists are
+  allowed per faction.</p>
+
+  <h3>Weapon skills and Endurance</h3>
+
+  <p>Eressea has 5 different weapon skills: bow (bow, mallorn bow, elven
+  bow), crossbow (crossbow, mallorn crossbow), catapult (catapult), melee
+  (sword, claymore, axe, laensword), and polearm (spear, mallorn spear,
+  lance, mallorn lance, halberd).</p>
+
+  <p>Units gain additional hit points if they have skill levels in the
+  endurance skill. See this <a href="combat.html#ENDURANCE">table</a> for the
+  benefits of each level of endurance.</p>
+
+  <p>More information about fighting is available in the <a href=
+  "combat.html">combat chapter</a>.</p>
+</body>
+</html>

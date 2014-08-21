@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 1st August 2004), see www.w3.org" />
+  <meta content="text/html; charset=utf-8" />
+  <meta name="keywords" content="Eressea" />
+  <meta name="author" content="Eressea PbeM - http://www.eressea.de/" />
+  <meta name="abstract" content="Eressea Documentation - Travel" />
+  <title>Travel</title>
+  <link rel="stylesheet" type="text/css" href="eressea.css" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#F82866" vlink="#0000DA" alink=
+"#F82866">
+
+  <h1>Movement: On Land and Sea</h1>
+
+  <p>In one week, a unit may move one land region by foot. If the unit has
+  sufficient riding skill and an appropriate number of horses, the unit may
+  move up to two land regions. If the regions are connected by roads, units
+  on foot may move two land regions, and units mounted on horses may move up
+  to three regions.</p>
+
+  <p>In order to regulate unit movement, the world of Eressea is divided into
+  a hexagonal grid. The six directions allowed are: Northeast, East,
+  Southeat, Northwest, West, Southwest. Direct movement to the north or south
+  is no possible.</p>
+
+  <p>The <a href="orders.html#CARRY">CARRY &lt;unit id&gt;</a> order allows
+  units to carry another whiel moving. The carried unit must be given the
+  <a href="orders.html#RIDE">RIDE &lt;unit id&gt;</a> order. With the CARRY
+  and RIDE system is is possible for units that have no riding skill to ride
+  with a unit that does have riding skill and horses or carts. Units on foot
+  can CARRY other units if their total carry capacity is sufficient. Carrying
+  units do not need horses or carts, sufficient numbers of men can carry
+  other units. See the <a href="races.html#profiles">races chapter</a> for
+  the weight and capacity of certain races.</p>
+
+  <p>While travelling through a region, units can have their movement
+  prevented by other units guarding the region with the <a href=
+  "orders.html#GUARD">GUARD</a> order.</p>
+
+  <p>A unit or ship is overloaded when its carrying capacity is exceeded. In
+  all situations, any unit or ship that is overloaded cannot move. The weight
+  a unit is carrying including silver and all items, as well as any units it
+  is carrying. The table below lists the weights and carrying capacities of
+  all races and other vehicles. This <a href=
+  "production.html#ITEMS">table</a> lists the weights of all items in the
+  game.</p>
+
+  <div align="center">
+    <a name="weights" id="weights"></a>
+
+    <table border="0" cellpadding="3">
+      <caption align="bottom">
+        Weights and carrying capacities of races and vehicles.
+      </caption>
+      <tr>
+        <th align="center" bgcolor="#DDDDDD">Race/Item</th>
+        <th align="center" bgcolor="#DDDDDD">Weight</th>
+        <th align="center" bgcolor="#DDDDDD">Carry Capacity</th>
+      </tr>
+
+      <tr>
+        <td align="center" bgcolor="#DDDDDD">Trolls</td>
+        <td align="center" bgcolor="#DDDDDD">20</td>
+        <td align="center" bgcolor="#DDDDDD">10.8</td>
+      </tr>
+
+      <tr>
+        <td align="center" bgcolor="#DDDDDD">Goblins</td>
+        <td align="center" bgcolor="#DDDDDD">6</td>
+        <td align="center" bgcolor="#DDDDDD">4.4</td>
+      </tr>
+
+      <tr>
+        <td align="center" bgcolor="#EEEEEE">Other Races</td>
+        <td align="center" bgcolor="#EEEEEE">10</td>
+        <td align="center" bgcolor="#EEEEEE">5.4</td>
+      </tr>
+
+      <tr>
+        <td align="center" bgcolor="#EEEEEE">Horse</td>
+        <td align="center" bgcolor="#EEEEEE">50</td>
+        <td align="center" bgcolor="#EEEEEE">20</td>
+      </tr>
+
+      <tr>
+        <td align="center" bgcolor="#DDDDDD">Cart</td>
+        <td align="center" bgcolor="#DDDDDD">40</td>
+        <td align="center" bgcolor="#DDDDDD">140</td>
+      </tr>
+
+      <tr>
+        <td align="center" bgcolor="#EEEEEE">Boat</td>
+        <td align="center" bgcolor="#EEEEEE">N/A</td>
+        <td align="center" bgcolor="#EEEEEE">50</td>
+      </tr>
+
+      <tr>
+        <td align="center" bgcolor="#DDDDDD">Longboat</td>
+        <td align="center" bgcolor="#DDDDDD">N/A</td>
+        <td align="center" bgcolor="#DDDDDD">500</td>
+      </tr>
+
+      <tr>
+        <td align="center" bgcolor="#EEEEEE">Dragonship</td>
+        <td align="center" bgcolor="#EEEEEE">N/A</td>
+        <td align="center" bgcolor="#EEEEEE">1000</td>
+      </tr>
+
+      <tr>
+        <td align="center" bgcolor="#DDDDDD">Trireme</td>
+        <td align="center" bgcolor="#DDDDDD">N/A</td>
+        <td align="center" bgcolor="#DDDDDD">2000</td>
+      </tr>
+
+      <tr>
+        <td align="center" bgcolor="#EEEEEE">Caravel</td>
+        <td align="center" bgcolor="#EEEEEE">N/A</td>
+        <td align="center" bgcolor="#EEEEEE">3000</td>
+      </tr>
+
+    </table>
+  </div>
+
+  <h2><a name="roads" id="roads">Roads</a></h2>
+
+  <p>Building roads allows units to move one additional region. On a network
+  of roads, a unit may move up to 2 regions on foot, or 3 regions by horse.
+  In order to take advantage of this, the unit must move continuously on
+  completed roads.</p>
+
+  <h2><a name="riding" id="riding">Horses and carts</a></h2>
+
+  <p>Any unit with the riding skill and enough horses can use the horses for
+  transportation when moving. This allows the unit to travel one additional
+  region.</p>
+
+  <p>Any unit without the riding skill can lead one horse by hand, per
+  person. This means the unit still move by foot, but leads the horse with
+  him. A unit leading a horse would move one region on foot, two regions if
+  complete roads are present.</p>
+
+  <p>If a unit does have the riding skill, the number of horses and carts it
+  may travel with is dependant on the riding skill of the unit, and how far
+  the unit is ordered to travel. If the unit only moves 1 region (or 2
+  regions along a road), each person in a unit with riding skill can move up
+  to 4 horses per level of riding skill. If moving 2 regions (or 3 regions
+  along a road), each person in a unit with riding skill can move up to 2
+  horses per level of riding skill. You allways need riding skill to use
+  carts and then for every 2 horses, a unit is allowed to use 1 cart. If a
+  unit is allowed to travel with 8 horses, it may also use 4 carts. If it
+  only uses 2 horses, it may move 1 cart.</p>
+
+  <p>Most <a href="races.html#profiles">races</a> have a carrying capacity of
+  5.4 weight units. A horse has a carrying capacity of 20 weight units.
+  Therefore, 2 persons could ride on one horse, or one person could ride a
+  horse carrying 10 swords. In theory, everything can be transported by a
+  unit, including other units. Note that carts weight 40 weight units. A unit
+  with horses or using carts can go on foot and not use up space in the cart.
+  In this manner, the unit can carry additional items in addition to what the
+  cart can carry. Simply put, the unit is walking alongside the cart, rather
+  than riding in it. A unit moving only 1 region on land, or 2 regions along
+  roads is automatically considered to be moving by foot.</p>
+
+  <blockquote>
+    <p>A unit with 4 persons and a riding skill of 1 can move at most, 20
+    horses and one reagion (or 2 regions on roads). This is calculated as
+    follows: 4 people can lead 4 horses. In addition, each person can lead an
+    additional 4 horses beause of their riding skill level (4 + (4 * 4) =
+    20).<br />
+    <br />
+    A unit with 5 dwarves without the riding skill can move one region on
+    foot (or 2 regions along roads) with up to 5 horses. In this case, the
+    carrying capacity of these 5 dwarves and 5 horses is 127 weight units ((5
+    * 5.2) + (5 * 20) = 127).</p>
+  </blockquote>
+
+  <p>Carts have a carrying capacity of 140 weigt units, which means they can
+  carry large amounts of goods. Each cart needs 2 horses (or 4 Trolls) to
+  pull it. Horses that are pulling a cart cannot carry anything else as it
+  takes all their strength to pull the cart. Note that 2 horses have a carry
+  capacity of 40 weight units, which is identical to the weight of the cart
+  itself. However, 4 Trolls can push a cart plus an additional 3.2 weight
+  units. In either case, if you wish to move carts without using Trolls, you
+  must have the riding skill and horses. Carts can still be carryed as
+  freight rather than used to transport goods, but they are very heavy,
+  weighin 40 weight units a piece.</p>
+
+  <blockquote>
+    <p>Example, one person with riding skill 1 has one cart and two horses,
+    and wishes to move two regions without roads. In this case, the owner of
+    the cart can move 130 weight units with him (i.e. 130 swords) as the two
+    horses pull the cart. The cart can carry up to 140 weight units, but 10
+    units of this is occupied by the cart owner as he rides along with the
+    cargo. In another example, a unit with 4 persons and riding skill 1 could
+    move eight carts using 16 horses one region, or it could move 4 carts
+    with 8 horses two regions. If you want to move 1 person with 1 cart and 2
+    horses on a ship, then the ship must have 150 weight units available on
+    board to carry the person, 2 horses and cart (10 + 40 + 100 = 150).</p>
+  </blockquote>
+
+  <p>If a unit has too many horses, or is carrying too much weight, the unit
+  cannot move.</p>
+
+  <p>Note that carrying capacity is calculated on a unit by unit basis.
+  Therefore 1 Person with Riding skill 3 and 6 horses and 3 carts wishing to
+  move 1 region (walking in this case) has a carrying capacity of ((3 * 140)
+  + 5.4) = 425.4 WU and therefore this example unit can move 7 stones if it
+  wishes only to move one region. If this example unit wants to move 2
+  regions (not on a road) then it can only carry 6 stones, as the person must
+  ride on the cart and this means then that carrying capacity of the unit is
+  420 WU minus 10 WU (the weight of the driver on the cart) = 410 WU. 7
+  Stones weigh (7 * 60) 420 WU. So, this unit can not move 2 regions (without
+  roads) with 7 stones, as it would be overloaded.</p>
+
+  <h2><a name="sailing" id="sailing">Ship Movement</a></h2>
+
+  <p>Only with ships can you leave your island and make contact with or
+  engage in trade with other factions on other islands. With a ship it is
+  possible to move up to 7 regions (even more than 7 regions with the help of
+  aquarians or with magic!).</p>
+
+  <p>All ships greater in size than a boat can only come onto a land region
+  (landing if you will) at Plains or Forest regions. All other terrain
+  (region) types require someone to build a harbour in them in order for
+  ships greater than a boat in size to land at. Ships can, however, cast off
+  from any region. One can build a ship and set sail from any region.</p>
+
+  <p>No ship can move directly from one land (coastal) region to another land
+  (coastal) region. Any ship that is landed must first then sail onto the
+  ocean before it can move to another land region. Additionally, a ship that
+  is landed can only sail out onto the ocean in the direction from which it
+  came from when it landed or in a direction adjacent to the direction from
+  which it arrived at the land (coastal) region. For example, a ship arrives
+  onto a land (coastal) region from the west, if this ship wishes then to
+  depart (sail out) from this region it can only go west, northwest, or
+  southwest. Ships on land in a region with a harbour can move toward any
+  direction, so long as the region they are moving to is an ocean region and
+  your faction commands the harbour building or the faction that does command
+  the harbour building has <a href="orders.html#HELP"><tt>HELP GUARD</tt></a>
+  for your faction.</p>
+
+  <p>On the open sea (ocean regions that are not adjacent to any land
+  regions) it is possible your ships can be sent off course or even damaged
+  by storms, beware!</p>
+
+  <p>In order to move a ship you need trained a trained crew, that is a unit
+  (or units) that have learned the skill "Sailing". On <a href=
+  "travel.html#sailing">this chart</a> under "Captain" is listed the minimum
+  skill of the Ship Captain (that is the first unit on your report under the
+  named ship) in order for the unit to move the ship. Example, in order to
+  move a caravel, the ship captain unit must at least have Sailing skill 3.
+  In addition to this, on board the ship must be a certain amount of "Total
+  skill" in sailing skill, depending on the type of ship. The below chart
+  lists the total sailing skill needed on board a ship to move it. This total
+  sailing skill includes the captain unit and also includes any allies of the
+  ship captain unit on board the ship that have sailing skill. The range of
+  the ship is the distance in numbers of region such a ship can move in one
+  week. Note, however, that any ship that has an aquarian Ship Captain
+  receives a bonus of +1 to it's range, therefore a Trireme captained by an
+  aquarian can move 8 regions per week. (Migrant aquarians in a human faction
+  do not receive this bonus).</p>
+
+  <div align="center">
+    <center>
+      <table border="0" cellpadding="3">
+        <caption align="bottom">
+          Ships - Range, Capacity, required skills
+        </caption>
+        <tr>
+          <th bgcolor="#DDDDDD">Type</th>
+          <th bgcolor="#DDDDDD">Range</th>
+          <th bgcolor="#DDDDDD">Capacity</th>
+          <th bgcolor="#DDDDDD">Captain</th>
+          <th bgcolor="#DDDDDD">Total skill</th>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#EEEEEE">Boat</td>
+          <td align="center" bgcolor="#EEEEEE">2</td>
+          <td align="center" bgcolor="#EEEEEE">50</td>
+          <td align="center" bgcolor="#EEEEEE">1</td>
+          <td align="center" bgcolor="#EEEEEE">2</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#DDDDDD">Longboat</td>
+          <td align="center" bgcolor="#DDDDDD">3</td>
+          <td align="center" bgcolor="#DDDDDD">500</td>
+          <td align="center" bgcolor="#DDDDDD">1</td>
+          <td align="center" bgcolor="#DDDDDD">10</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#EEEEEE">Dragonship</td>
+          <td align="center" bgcolor="#EEEEEE">5</td>
+          <td align="center" bgcolor="#EEEEEE">1000</td>
+          <td align="center" bgcolor="#EEEEEE">2</td>
+          <td align="center" bgcolor="#EEEEEE">50</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#DDDDDD">Caravel</td>
+          <td align="center" bgcolor="#DDDDDD">5</td>
+          <td align="center" bgcolor="#DDDDDD">3000</td>
+          <td align="center" bgcolor="#DDDDDD">3</td>
+          <td align="center" bgcolor="#DDDDDD">30</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#EEEEEE">Trireme</td>
+          <td align="center" bgcolor="#EEEEEE">7</td>
+          <td align="center" bgcolor="#EEEEEE">2000</td>
+          <td align="center" bgcolor="#EEEEEE">4</td>
+          <td align="center" bgcolor="#EEEEEE">120</td>
+        </tr>
+
+      </table>
+    </center>
+  </div>
+
+  <p>Any ship without enough qualified crew can not sail out. If, for
+  whatever reason, a ship on the ocean finds itself without enough qualified
+  crew then the ship can not be controlled and will drift randomly until the
+  ship drifts onto land. However, any ship that is adrift will break apart
+  (takes damage), such that after a short period of time it will sink (see
+  also <a href="production.html#shipdamage">here</a>).</p>
+
+  <p>Every ship type has a carrying capacity. Any ship that is overloaded can
+  not sail out. The weight of everything on board a ship counts towards the
+  ships carrying capacity (people, silver, horses, carts, etc.) The listing
+  of ship capacity is found in <a href="travel.html#sailing">this chart</a>
+  and is also listed in your report</p>
+
+  <p>A unit that finds itself on a ship on the ocean at the start of any week
+  can not do any long orders, except aquarians. Aquarians are permitted to do
+  long orders on the ocean. Of course, all ship captains (regardless of their
+  race) are allowed to move the ship with the long order <a href=
+  "orders.html#MOVE"><tt>MOVE</tt></a> or <a href=
+  "orders.html#ROUTE"><tt>ROUTE</tt></a>. In any case, units on board a ship,
+  just as on land, require 10 silver per week per person to live
+  (representative of food). Hint: Make sure you keep an eye on that.</p>
+
+  <p>Any unit that wishes to get off of a ship onto land must do so with the
+  <a href="orders.html#LEAVE"><tt>LEAVE</tt></a> order. If the region wherein
+  the unit gets off of the ship (LEAVE) is not guarded by a non-ally, then
+  the unit may move with the <a href="orders.html#MOVE"><tt>MOVE</tt></a>
+  order in that same week, otherwise, the unit must wait one week before it
+  may move if the region is indeed guarded by a non-ally. These same rules
+  apply to attempting movement by <a href=
+  "orders.html#RIDE"><tt>RIDE</tt></a> and <a href=
+  "orders.html#CARRY"><tt>CARRY</tt></a> orders after getting off of a
+  ship</p>
+
+  <p>Aquarians can swim from an ocean region onto a directly adjacent land
+  region (with the MOVE order), but the reverse is not true. Aquarians can
+  not swim from a land region onto any ocean region. Swimming aquarians can
+  take with them anything (items, etc.) with the exception of horses.</p>
+</body>
+</html>

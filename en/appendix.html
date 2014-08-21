@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 1st August 2004), see www.w3.org" />
+  <meta content="text/html; charset=utf-8" />
+  <meta name="keywords" content="Eressea" />
+  <meta name="author" content="Eressea PbeM - http://www.eressea.de/" />
+  <meta name="abstract" content="Eressea Documentation - General Tables" />
+
+  <title>Appendix: Tables</title>
+  <link rel="stylesheet" type="text/css" href="eressea.css" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#002866" vlink="#0000DA" alink=
+"#002866">
+  <h1>Appendix: Tables</h1>
+
+  <div align="center">
+    <center>
+      <a name="terrains" id="terrains"></a>
+
+      <table border="0" cellpadding="3">
+        <caption align="bottom">
+          Terrains - Size, Trees and Roads
+        </caption>
+        <tr>
+          <th bgcolor="#DDDDDD">Terrain</th>
+          <th bgcolor="#DDDDDD">max. workers</th>
+          <th bgcolor="#DDDDDD">max. trees</th>
+          <th bgcolor="#DDDDDD">stones for a road</th>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#EEEEEE">Mountain</td>
+          <td align="center" bgcolor="#EEEEEE">1000</td>
+          <td align="center" bgcolor="#EEEEEE">125</td>
+          <td align="center" bgcolor="#EEEEEE">250</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#DDDDDD">Plain</td>
+          <td align="center" bgcolor="#DDDDDD">10000</td>
+          <td align="center" bgcolor="#DDDDDD">1250</td>
+          <td align="center" bgcolor="#DDDDDD">50</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#EEEEEE">Glacier</td>
+          <td align="center" bgcolor="#EEEEEE">100</td>
+          <td align="center" bgcolor="#EEEEEE">13</td>
+          <td align="center" bgcolor="#EEEEEE">250</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#DDDDDD">Highland</td>
+          <td align="center" bgcolor="#DDDDDD">4000</td>
+          <td align="center" bgcolor="#DDDDDD">500</td>
+          <td align="center" bgcolor="#DDDDDD">100</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#EEEEEE">Swamp</td>
+          <td align="center" bgcolor="#EEEEEE">2000</td>
+          <td align="center" bgcolor="#EEEEEE">250</td>
+          <td align="center" bgcolor="#EEEEEE">75</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#DDDDDD">Desert</td>
+          <td align="center" bgcolor="#DDDDDD">500</td>
+          <td align="center" bgcolor="#DDDDDD">63</td>
+          <td align="center" bgcolor="#DDDDDD">100</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#EEEEEE">Forest</td>
+          <td align="center" bgcolor="#EEEEEE">10000</td>
+          <td align="center" bgcolor="#EEEEEE">1250</td>
+          <td align="center" bgcolor="#EEEEEE">50</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#DDDDDD">Volcano</td>
+          <td align="center" bgcolor="#DDDDDD">500</td>
+          <td align="center" bgcolor="#DDDDDD">63</td>
+          <td align="center" bgcolor="#DDDDDD">250</td>
+        </tr>
+
+      </table>
+    </center>
+  </div>
+
+  <p>The column "max. trees" specifies the number of trees (a young tree is 
+  counted as 1/2 tree) that can fill up all the space in the region and make
+  working impossible. Note that a region can contain more trees than the amount
+  specified here.</p>
+
+  <p>In glaciers, swamps and deserts, roads can only be built in combination
+  with certain buildings.</p>
+
+  <div align="center">
+    <a name="stealth" id="stealth"></a> <a name="perception" id=
+    "perception"></a>
+
+    <table border="0" cellpadding="3">
+      <caption align="bottom">
+        Stealth and Perception
+      </caption>
+      <tr>
+        <th bgcolor="#DDDDDD">Stealth - Perception</th>
+        <th bgcolor="#DDDDDD">Effect</th>
+      </tr>
+
+      <tr>
+        <td align="center" bgcolor="#EEEEEE">Stealth = Perception</td>
+        <td bgcolor="#EEEEEE">Unit can be seen; thieves cannot steal, but
+        target gets an anonymous message only</td>
+      </tr>
+
+      <tr>
+        <td align="center" bgcolor="#DDDDDD">Stealth &gt; Perception</td>
+        <td bgcolor="#DDDDDD">Unit cannot be seen; thieves are successful and
+        stay undetected.</td>
+      </tr>
+
+      <tr>
+        <td align="center" bgcolor="#EEEEEE">Stealth &lt; Perception</td>
+        <td bgcolor="#EEEEEE">Unit can be seen; Thieves are unsuccessful and
+        identified by their targets.</td>
+      </tr>
+
+    </table>
+  </div>
+
+  <p>&nbsp;</p>
+
+  <div align="center">
+    <center>
+      <a name="buildings" id="buildings"></a>
+
+      <table border="0" cellpadding="3">
+        <caption align="bottom">
+          Buildings
+        </caption>
+        <tr>
+          <th rowspan="2" bgcolor="#DDDDDD">Building</th>
+          <th colspan="4" bgcolor="#DDDDDD">Resource Cost</th>
+          <th rowspan="2" bgcolor="#DDDDDD">Skill</th>
+          <th colspan="2" bgcolor="#DDDDDD">Upkeep</th>
+          <th rowspan="2" bgcolor="#DDDDDD">Limit</th>
+          <th rowspan="2" bgcolor="#DDDDDD">Capacity</th>
+        </tr>
+
+        <tr>
+          <th bgcolor="#EEEEEE">Stone</th>
+          <th bgcolor="#EEEEEE">Wood</th>
+          <th bgcolor="#EEEEEE">Iron</th>
+          <th bgcolor="#EEEEEE">Silver</th>
+          <th bgcolor="#EEEEEE">Silver</th>
+          <th bgcolor="#EEEEEE">Resources</th>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#DDDDDD">Lighthouse</td>
+          <td align="center" bgcolor="#DDDDDD">2</td>
+          <td align="center" bgcolor="#DDDDDD">1</td>
+          <td align="center" bgcolor="#DDDDDD">1</td>
+          <td align="center" bgcolor="#DDDDDD">100</td>
+          <td align="center" bgcolor="#DDDDDD">3</td>
+          <td align="center" bgcolor="#DDDDDD">100</td>
+          <td align="center" bgcolor="#DDDDDD">-/-</td>
+          <td align="center" bgcolor="#DDDDDD">none</td>
+          <td align="center" bgcolor="#DDDDDD">4 people</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#EEEEEE">Mine</td>
+          <td align="center" bgcolor="#EEEEEE">5</td>
+          <td align="center" bgcolor="#EEEEEE">10</td>
+          <td align="center" bgcolor="#EEEEEE">1</td>
+          <td align="center" bgcolor="#EEEEEE">250</td>
+          <td align="center" bgcolor="#EEEEEE">4</td>
+          <td align="center" bgcolor="#EEEEEE">500</td>
+          <td align="center" bgcolor="#EEEEEE">-/-</td>
+          <td align="center" bgcolor="#EEEEEE">none</td>
+          <td align="center" bgcolor="#EEEEEE">size</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#DDDDDD">Quarry</td>
+          <td align="center" bgcolor="#DDDDDD">1</td>
+          <td align="center" bgcolor="#DDDDDD">5</td>
+          <td align="center" bgcolor="#DDDDDD">1</td>
+          <td align="center" bgcolor="#DDDDDD">250</td>
+          <td align="center" bgcolor="#DDDDDD">2</td>
+          <td align="center" bgcolor="#DDDDDD">250</td>
+          <td align="center" bgcolor="#DDDDDD">-/-</td>
+          <td align="center" bgcolor="#DDDDDD">none</td>
+          <td align="center" bgcolor="#DDDDDD">size</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#EEEEEE">Sawmill</td>
+          <td align="center" bgcolor="#EEEEEE">5</td>
+          <td align="center" bgcolor="#EEEEEE">5</td>
+          <td align="center" bgcolor="#EEEEEE">3</td>
+          <td align="center" bgcolor="#EEEEEE">200</td>
+          <td align="center" bgcolor="#EEEEEE">3</td>
+          <td align="center" bgcolor="#EEEEEE">250</td>
+          <td align="center" bgcolor="#EEEEEE">-/-</td>
+          <td align="center" bgcolor="#EEEEEE">none</td>
+          <td align="center" bgcolor="#EEEEEE">size</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#DDDDDD">Smithy</td>
+          <td align="center" bgcolor="#DDDDDD">5</td>
+          <td align="center" bgcolor="#DDDDDD">5</td>
+          <td align="center" bgcolor="#DDDDDD">2</td>
+          <td align="center" bgcolor="#DDDDDD">200</td>
+          <td align="center" bgcolor="#DDDDDD">3</td>
+          <td align="center" bgcolor="#DDDDDD">300</td>
+          <td align="center" bgcolor="#DDDDDD">1 wood</td>
+          <td align="center" bgcolor="#DDDDDD">none</td>
+          <td align="center" bgcolor="#DDDDDD">size</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#EEEEEE">Stables</td>
+          <td align="center" bgcolor="#EEEEEE">2</td>
+          <td align="center" bgcolor="#EEEEEE">4</td>
+          <td align="center" bgcolor="#EEEEEE">1</td>
+          <td align="center" bgcolor="#EEEEEE">100</td>
+          <td align="center" bgcolor="#EEEEEE">2</td>
+          <td align="center" bgcolor="#EEEEEE">150</td>
+          <td align="center" bgcolor="#EEEEEE">-/-</td>
+          <td align="center" bgcolor="#EEEEEE">none</td>
+          <td align="center" bgcolor="#EEEEEE">size</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#DDDDDD">Harbour</td>
+          <td align="center" bgcolor="#DDDDDD">5</td>
+          <td align="center" bgcolor="#DDDDDD">5</td>
+          <td align="center" bgcolor="#DDDDDD">-/-</td>
+          <td align="center" bgcolor="#DDDDDD">250</td>
+          <td align="center" bgcolor="#DDDDDD">3</td>
+          <td align="center" bgcolor="#DDDDDD">250</td>
+          <td align="center" bgcolor="#DDDDDD">-/-</td>
+          <td align="center" bgcolor="#DDDDDD">25</td>
+          <td align="center" bgcolor="#DDDDDD">size</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#EEEEEE">Caravanserei</td>
+          <td align="center" bgcolor="#EEEEEE">1</td>
+          <td align="center" bgcolor="#EEEEEE">5</td>
+          <td align="center" bgcolor="#EEEEEE">1</td>
+          <td align="center" bgcolor="#EEEEEE">500</td>
+          <td align="center" bgcolor="#EEEEEE">2</td>
+          <td align="center" bgcolor="#EEEEEE">3000</td>
+          <td align="center" bgcolor="#EEEEEE">2 horses</td>
+          <td align="center" bgcolor="#EEEEEE">10</td>
+          <td align="center" bgcolor="#EEEEEE">size</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#DDDDDD">Academy</td>
+          <td align="center" bgcolor="#DDDDDD">5</td>
+          <td align="center" bgcolor="#DDDDDD">5</td>
+          <td align="center" bgcolor="#DDDDDD">1</td>
+          <td align="center" bgcolor="#DDDDDD">500</td>
+          <td align="center" bgcolor="#DDDDDD">3</td>
+          <td align="center" bgcolor="#DDDDDD">1000</td>
+          <td align="center" bgcolor="#DDDDDD">-/-</td>
+          <td align="center" bgcolor="#DDDDDD">25</td>
+          <td align="center" bgcolor="#DDDDDD">size</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#EEEEEE">Mage Tower (*)</td>
+          <td align="center" bgcolor="#EEEEEE">5</td>
+          <td align="center" bgcolor="#EEEEEE">3</td>
+          <td align="center" bgcolor="#EEEEEE">3</td>
+          <td align="center" bgcolor="#EEEEEE">500</td>
+          <td align="center" bgcolor="#EEEEEE">5</td>
+          <td align="center" bgcolor="#EEEEEE">1000</td>
+          <td align="center" bgcolor="#EEEEEE">-/-</td>
+          <td align="center" bgcolor="#EEEEEE">50</td>
+          <td align="center" bgcolor="#EEEEEE">2 people</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#DDDDDD">Dam</td>
+          <td align="center" bgcolor="#DDDDDD">5</td>
+          <td align="center" bgcolor="#DDDDDD">10</td>
+          <td align="center" bgcolor="#DDDDDD">1</td>
+          <td align="center" bgcolor="#DDDDDD">500</td>
+          <td align="center" bgcolor="#DDDDDD">4</td>
+          <td align="center" bgcolor="#DDDDDD">1000</td>
+          <td align="center" bgcolor="#DDDDDD">3 wood</td>
+          <td align="center" bgcolor="#DDDDDD">50</td>
+          <td align="center" bgcolor="#DDDDDD">size</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#EEEEEE">Tunnel</td>
+          <td align="center" bgcolor="#EEEEEE">10</td>
+          <td align="center" bgcolor="#EEEEEE">5</td>
+          <td align="center" bgcolor="#EEEEEE">1</td>
+          <td align="center" bgcolor="#EEEEEE">300</td>
+          <td align="center" bgcolor="#EEEEEE">6</td>
+          <td align="center" bgcolor="#EEEEEE">100</td>
+          <td align="center" bgcolor="#EEEEEE">2 stone</td>
+          <td align="center" bgcolor="#EEEEEE">100</td>
+          <td align="center" bgcolor="#EEEEEE">size</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#DDDDDD">Inn</td>
+          <td align="center" bgcolor="#DDDDDD">4</td>
+          <td align="center" bgcolor="#DDDDDD">3</td>
+          <td align="center" bgcolor="#DDDDDD">1</td>
+          <td align="center" bgcolor="#DDDDDD">200</td>
+          <td align="center" bgcolor="#DDDDDD">2</td>
+          <td align="center" bgcolor="#DDDDDD">5*size</td>
+          <td align="center" bgcolor="#DDDDDD">-/-</td>
+          <td align="center" bgcolor="#DDDDDD">none</td>
+          <td align="center" bgcolor="#DDDDDD">size</td>
+        </tr>
+
+        <tr>
+          <td align="center" bgcolor="#EEEEEE">Monument</td>
+          <td align="center" bgcolor="#EEEEEE">1</td>
+          <td align="center" bgcolor="#EEEEEE">1</td>
+          <td align="center" bgcolor="#EEEEEE">1</td>
+          <td align="center" bgcolor="#EEEEEE">400</td>
+          <td align="center" bgcolor="#EEEEEE">4</td>
+          <td align="center" bgcolor="#EEEEEE">none</td>
+          <td align="center" bgcolor="#EEEEEE">-/-</td>
+          <td align="center" bgcolor="#EEEEEE">none</td>
+          <td align="center" bgcolor="#EEEEEE">size</td>
+        </tr>
+
+      </table>(*) additionally, 2 mallorn und 2 laen per point of size
+    </center>
+  </div>
+
+  <h2><a name="TabNahkampf" id="TabNahkampf"></a><a name=
+  "INDEX-Kampf!Nahkampf"></a>Close Combat Modifiers</h2>
+
+  <div align="center">
+    <center>
+      <table summary="Close Combat Factors" border="0" cellpadding="3">
+        <caption align="bottom">
+          Close combat - the modifiers are accumulative.
+        </caption>
+        <tr>
+          <th bgcolor="#DDDDDD">Combatant</th>
+          <th bgcolor="#DDDDDD">Attack</th>
+          <th bgcolor="#DDDDDD">Defense</th>
+        </tr>
+
+        <tr>
+          <td bgcolor="#EEEEEE">Unarmed</td>
+          <td align="center" bgcolor="#EEEEEE">-2</td>
+          <td align="center" bgcolor="#EEEEEE">-2</td>
+        </tr>
+
+        <tr>
+          <td bgcolor="#DDDDDD">Armed but unskilled</td>
+          <td align="center" bgcolor="#DDDDDD">-2</td>
+          <td align="center" bgcolor="#DDDDDD">-2</td>
+        </tr>
+
+        <tr>
+          <td bgcolor="#EEEEEE">In castle</td>
+          <td bgcolor="#EEEEEE">&nbsp;</td>
+          <td align="center" bgcolor="#EEEEEE">+1 ... +5</td>
+        </tr>
+
+        <tr>
+          <td bgcolor="#DDDDDD">Rider with skill level 2<br />
+          (only in planes, deserts and<br />
+          highlands; not in castle)</td>
+          <td align="center" valign="top" bgcolor="#DDDDDD">+2</td>
+          <td align="center" valign="top" bgcolor="#DDDDDD">+2</td>
+        </tr>
+
+        <tr>
+          <td bgcolor="#EEEEEE">Rider with lance/spear<br />
+          and riding skill level 2</td>
+          <td align="center" bgcolor="#EEEEEE">+1</td>
+          <td bgcolor="#EEEEEE">&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td bgcolor="#DDDDDD">Spear/halberd vs. rider</td>
+          <td bgcolor="#DDDDDD">&nbsp;</td>
+          <td align="center" bgcolor="#DDDDDD">+1</td>
+        </tr>
+
+      </table>
+    </center>
+  </div>
+</body>
+</html>

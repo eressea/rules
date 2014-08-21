@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 1st August 2004), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Enno Rehling" />
+  <meta name="GENERATOR" content="Microsoft FrontPage 2.0" />
+
+  <title>How to Play</title>
+  <link rel="stylesheet" type="text/css" href="eressea.css" />
+</head>
+
+<body bgcolor="#FFFFFF">
+
+  <h1>How to play Eressea</h1>
+
+  <h2><a name="register" id="register">Getting started</a></h2>
+
+  <p>To register for the game, go to <a href=
+  "/web/20070803081719/http://www.eressea.de/en/register.html">http://www.eressea.de/en/register.html</a>
+  and fill in the form. After registration, you will receive an email that
+  you must reply to in order to verify your registered email address. When
+  that is done, <b>just wait until your next turn, where you will receive
+  your first report</b>.</p>
+
+  <p>New factions are placed in virgin areas of the world, with only players
+  of the same age around them. Some players think it's a good idea to spend
+  the first few weeks registering over and over again until they get a
+  seemingly good position. It's not. It makes it impossible for the GM's to
+  create an adequate population density if too many factions drop out, and it
+  creates holes that are hard to fill. Don't let yourself be fooled by first
+  appearances: The starting positions are not chosen by an unintelligent
+  algorithm, but by someone with five years experience. If your first region
+  looks poor, chances are, there are plenty of resources around you, or a
+  good combination of other races that will help you in the long run. If the
+  region looks too good to be true, it sometimes isn't.</p>
+
+  <p>In order to help the GM's fill the gaps that early dropouts create, they
+  have added the option of starting in an already populated area. Select this
+  option on the registration form, and you will be placed among factions that
+  are up to 20 weeks old. You will of receive much better starting equipment,
+  and usually you will be placed among people who need someone just like
+  you.</p>
+
+  <h2><a name="requirements" id="requirements">System requirements</a></h2>
+
+  <p>Eressea requires very little to play. Apart from an email account, the
+  only thing you need is a computer and a text editor. This can be notepad
+  for Windows, or even vi or emacs for Linux. You could even type the orders
+  directly into your mail tool if you like. Make sure you use a plain text
+  editor, not a word processor like Staroffice or Word; the game cannot read
+  anything but plain text.</p>
+
+  <p>Most likely, though, you will want something more visual. There are some
+  wonderful graphical clients available to play Eressea with, like Magellan
+  or EMap, as well as secondary tools for statistics, order preprocessing or
+  mapmaking. All of these can be found at <a href=
+  "/web/20070803081719/http://www.eressea.de/de/downloads.shtml">http://www.eressea.de/de/downloads.shtml</a>
+  and best of all, they are all free, written by players for players.</p>
+
+  <h2><a name="sending" id="sending">Sending in your orders</a></h2>
+
+  <p>Once you've written your orders, you must send them to the game server.
+  They must be sent to <a href=
+  "mailto:eressea-server@eressea.kn-bremen.de">eressea-server@eressea.kn-bremen.de</a>
+  with the subject ERESSEA ORDERS in order to be recognized and processed. If
+  you have already sent in orders, and find that you want to make changes,
+  send in a second set of orders; they will override the old ones. A lot of
+  players send in preliminary orders early in the week, and another set later
+  in the week, when diplomacy with other players has made changes necessary.
+  Make sure your computer's clock is set correctly. The game server uses the
+  time at which you send the orders to determine the latest orders, not the
+  time of their arrival.</p>
+
+  <p>Remember: Your turn has to be sent as plain text. Today, many mailers
+  offer rich text or even HTML formatted text. These are not readable by the
+  game server. If you want to send your orders as an attachment, they have to
+  be encoded as text/plain MIME attachments. If you don't know what that is,
+  or if you don't want to take chances, paste the orders into the body of
+  your e-mail instead. Due to the increasing number of different formats,
+  mail tools, and buggy implementations that exist today, the number of
+  players who get this wrong increases steadily.</p>
+
+  <p>When your orders reach the game server, they are processed by a simple
+  form of our syntax checker, ECheck. The results of this check will be sent
+  to you, and you should read them carefully. While an English version of
+  ECheck exists, it is not perfect, and inconsistencies between it and the
+  server may occur. Orders which ECheck considers legitimate may be ignore by
+  the server, and vice versa. This is an example of sample output you will
+  receive in the mail from ECheck:</p>
+  <pre>
+  ECHECK (Version 3.4.2, Jun 12 2000), Zug-Checker für Eressea - Freeware!
+
+  Verarbeite Datei `faroul@beyond.kn-bremen.de,2'.
+
+  Es wurden Befehle für 1 Partei und 100 Einheiten gelesen.
+  Die Befehle scheinen in Ordnung zu sein.
+</pre>
+
+  <p>The last two lines of the output are the important ones. In this case,
+  they translate to: "There were orders for 1 faction and 100 units sent in.
+  The orders seem to be okay". If it says 0 factions, or even 0 units, your
+  mail may not be in a proper format. <b>Remember, the English ECheck is not
+  perfect, and may not match what the server will accept</b>. To make sure
+  your orders are valid, ask someone for help; the Eressea help list <a href=
+  "mailto:eressea-help@eressea.kn-bremen.de">eressea-help@eressea.kn-bremen.de</a>
+  is a good place to start.</p>
+
+  <p>The game server parses incoming orders immediately. If you do
+  not get a reply to your orders within 20 minutes, there is something wrong,
+  and you should consider sending them again. Try sending them from an
+  alternative mail account if you have one.</p>
+
+  <p>If you fail to send in orders for three consecutive weeks, you will be
+  removed from the game.</p>
+
+  <h2><a name="notes" id="notes">Things to remember</a></h2>
+
+  <p>The first line of your orders must begin with ERESSEA &lt;faction
+  no.&gt; &lt;password&gt;, where you replace &lt;faction no.&gt; with the id
+  of your faction, and &lt;password&gt; with your password. A line containing
+  the word NEXT should be at the very end of your order file, telling the
+  server that your orders are finished completely, and that it should ignore
+  everything else in your email.</p>
+
+  <p>You can write one order per line. If your mail program breaks long
+  lines, then you have to add a continuation character at the end of the
+  line. Simply add a \ at the end to tell the game server to continue
+  processing in the next line, like this:</p>
+  <pre>
+DESCRIBE UNIT "The heroes of the second war on Andune have enjoyed \
+       their retirement for long. Now their country depends upon \
+       them once again, and they march against the Dark Alliance."
+</pre>
+</body>
+</html>

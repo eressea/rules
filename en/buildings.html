@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 1st August 2004), see www.w3.org" />
+  <meta content="text/html; charset=utf-8" />
+  <meta name="keywords" content="Eressea" />
+  <meta name="author" content="Eressea PbeM - http://www.eressea.de/" />
+  <meta name="abstract" content="Eressea Documentation - Buildings" />
+
+  <title>Buildings</title>
+  <link rel="stylesheet" type="text/css" href="eressea.css" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#F82866" vlink="#0000DA" alink=
+"#F82866">
+
+  <h4><a name="buildings" id="buildings">Building types</a></h4>
+
+  <p>The following is a listing of the types of buildings, their build costs,
+  and what they do for you.</p>
+
+  <h4><a name="lighthouse" id="lighthouse">Lighthouse</a></h4>
+
+  <div align="center">
+    <table border="0" cellpadding="3">
+      <tr>
+        <td bgcolor="#DDDDDD">Costs per point of size:</td>
+        <td bgcolor="#DDDDDD">2 stones, 1 wood, 1 iron, 100 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Skill required:</td>
+        <td bgcolor="#EEEEEE">3</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Maintenance per turn:</td>
+        <td bgcolor="#DDDDDD">100 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Maximum size:</td>
+        <td bgcolor="#EEEEEE">None</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Capacity:</td>
+        <td bgcolor="#DDDDDD">4 persons</td>
+      </tr>
+    </table>
+  </div>
+
+  <ul>
+    <li>Beginning from size 10, a lighthouse reduces the possibility that a
+    ship drifts off. This effect extends log<sub>10</sub>(size of the
+    lighthouse)+1 regions around the building.</li>
+
+    <li>Beginning from size 10, a lighthouse grants the persons inside
+    reports of all oceans in an area of log<sub>10</sub>(size of the
+    lighthouse)+1 around the building. In order to receive these reports, the
+    unit's perception skill level must be equal or greater than <tt>distance
+    x 3</tt>. Therefore you will only get a report of an ocean which is 3
+    regions away if your unit has at least perception at level 9 and your
+    lighthouse is at least of size 100.</li>
+  </ul>
+
+  <h4><a name="mine" id="mine">Mine</a></h4>
+
+  <div align="center">
+    <table border="0" cellpadding="3">
+      <tr>
+        <td bgcolor="#DDDDDD">Costs per point of size:</td>
+        <td bgcolor="#DDDDDD">5 stones, 10 wood, 1 iron, 250 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Skill required:</td>
+        <td bgcolor="#EEEEEE">4</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Maintenance per turn:</td>
+        <td bgcolor="#DDDDDD">500 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Maximum size:</td>
+        <td bgcolor="#EEEEEE">None</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Capacity:</td>
+        <td bgcolor="#DDDDDD">according to size</td>
+      </tr>
+    </table>
+  </div>
+
+  <ul>
+    <li>Only half of the iron which is produced by units inside a mine is
+    substracted from the ore in the region. This effect is cumulative to
+    special advantages of certain races.</li>
+
+    <li>Units inside a mine get +1 on their mining skill.</li>
+
+    <li>To produce laen you must be inside a mine.</li>
+  </ul>
+
+  <blockquote>
+    10 dwarfs produce 40 iron in a region. Due to the special ability of the
+    dwarfs the supply of the region is only reduced by 30 iron.<br />
+    If the dwarfs are inside a mine, the supply will be reduced by 15.<br />
+    If there are only 7 iron left in the region, the dwarfs can only produce
+    9 iron without the help of being in a mine or 18 iron if they are in a
+    mine.
+  </blockquote>
+
+  <h4><a name="quarry" id="quarry">Quarry</a></h4>
+
+  <div align="center">
+    <table border="0" cellpadding="3">
+      <tr>
+        <td bgcolor="#DDDDDD">Costs per point of size:</td>
+        <td bgcolor="#DDDDDD">1 stone, 5 wood, 1 iron, 250 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Skill required:</td>
+        <td bgcolor="#EEEEEE">2</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Maintenance per turn:</td>
+        <td bgcolor="#DDDDDD">250 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Maximum size:</td>
+        <td bgcolor="#EEEEEE">None</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Capacity:</td>
+        <td bgcolor="#DDDDDD">according to size</td>
+      </tr>
+    </table>
+  </div>
+
+  <ul>
+    <li>Only half of the stones which are produced by units inside a quarry
+    is deducted from the supply of the region. This effect is cumulative to
+    special advantages of certain races.</li>
+
+    <li>Units inside a quarry get +1 on their quarrying skill.</li>
+  </ul>
+
+  <blockquote>
+    10 trolls produce 40 stones in a region. Due to the special ability of
+    the trolls the supply of the region is only reduced by 30 stones.<br />
+    If the trolls are inside a quarry, the supply will be reduced by
+    15.<br />
+    If there are only 7 stones left in the region, the trolls can only
+    produce 9 stones without the help of being in a quarry or 18 stones if
+    they are in a quarry.
+  </blockquote>
+
+  <h4><a name="sawmill" id="sawmill">Sawmill</a></h4>
+
+  <div align="center">
+    <table border="0" cellpadding="3">
+      <tr>
+        <td bgcolor="#DDDDDD">Costs per point of size:</td>
+        <td bgcolor="#DDDDDD">5 stones, 5 wood, 3 iron, 200 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Skill required:</td>
+        <td bgcolor="#EEEEEE">3</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Maintenance per turn:</td>
+        <td bgcolor="#DDDDDD">250 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Maximum size:</td>
+        <td bgcolor="#EEEEEE">None</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Capacity:</td>
+        <td bgcolor="#DDDDDD">according to size</td>
+      </tr>
+    </table>
+  </div>
+
+  <ul>
+    <li>Only half of the wood which is produced by units inside a sawmill is
+    substracted from the supply in the region.</li>
+
+    <li>Units inside a sawmill get a +1 modifier to their forestry
+    skill.</li>
+  </ul>
+
+  <h4><a name="smithy" id="smithy">Smithy</a></h4>
+
+  <div align="center">
+    <table border="0" cellpadding="3">
+      <tr>
+        <td bgcolor="#DDDDDD">Costs per point of size:</td>
+        <td bgcolor="#DDDDDD">5 stones, 5 wood, 2 iron, 200 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Skill required:</td>
+        <td bgcolor="#EEEEEE">3</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Maintenance per turn:</td>
+        <td bgcolor="#DDDDDD">300 silver, 1 wood</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Maximum size:</td>
+        <td bgcolor="#EEEEEE">None</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Capacity:</td>
+        <td bgcolor="#DDDDDD">according to size</td>
+      </tr>
+    </table>
+  </div>
+
+  <ul>
+    <li>Units inside a smithy only need half the normal amount of iron to
+    make iron weapons and armour. Laen is not saved in a smithy.</li>
+
+    <li>Units inside a smithy receive a +1 modifier to their weaponsmithing
+    and armoursmithing skills.</li>
+  </ul>
+
+  <h4><a name="stable" id="stable">Stable</a></h4>
+
+  <div align="center">
+    <table border="0" cellpadding="3">
+      <tr>
+        <td bgcolor="#DDDDDD">Costs per point of size:</td>
+        <td bgcolor="#DDDDDD">2 stones, 4 wood, 1 iron, 100 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Skill required:</td>
+        <td bgcolor="#EEEEEE">2</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Maintenance per turn:</td>
+        <td bgcolor="#DDDDDD">150 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Maximum size:</td>
+        <td bgcolor="#EEEEEE">None</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Capacity:</td>
+        <td bgcolor="#DDDDDD">according to size</td>
+      </tr>
+    </table>
+  </div>
+
+  <ul>
+    <li>Units inside a stable can produce horses by using the order GROW
+    HORSE. For this the unit needs the skill taming and at least 2
+    horses.</li>
+
+    <li>A man inside a stable has a percent chance to breed a horse equal to
+    his taming skill. In addition, he is allowed multiple attempts, also
+    equal to his taming skill. For example, a man with level 5 taming skill
+    has 5 attempts of 5% each to breed a horse.</li>
+
+    <li>Per breeding attempt the breeder needs to own one horse. If there are
+    not enough horses available, the additonal attempts are lost.</li>
+  </ul>
+
+  <h4><a name="harbour" id="harbour">Harbour</a></h4>
+
+  <div align="center">
+    <table border="0" cellpadding="3">
+      <tr>
+        <td bgcolor="#DDDDDD">Costs per point of size:</td>
+        <td bgcolor="#DDDDDD">5 stones, 5 wood, 250 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Total cost:</td>
+        <td bgcolor="#EEEEEE">125 stones, 125 wood, 6250 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Skill required:</td>
+        <td bgcolor="#DDDDDD">3</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Maintenance per turn:</td>
+        <td bgcolor="#EEEEEE">250 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Maximum size:</td>
+        <td bgcolor="#DDDDDD">25</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Capacity:</td>
+        <td bgcolor="#EEEEEE">persons according to size, unlimited ships</td>
+      </tr>
+    </table>
+  </div>
+
+  <ul>
+    <li>A harbour allows ships which are larger than a boat to land in
+    regions which are not plains or forests.</li>
+
+    <li>The owner of the harbour receives 10% of all the money which is
+    earned through trade in addition to the possible income through
+    castles.</li>
+
+    <li>The owner also receives (2*Trade)% of all luxury items which are on
+    board of incoming ships. If the unit which carries the goods is
+    camouflaged on a higher level than the harbour master's perception level
+    is, no goods will be received due to successful smuggling. This also applies
+    if he is allied with the captain.</li>
+
+    <li>In a region with a harbour, the prices of goods will increase with a
+    probability of 20% instead of the normal 10% (without a harbour).</li>
+
+    <li>A region with a harbour may used as a canal, that means a ship in the
+    harbour may cast off in every direction where an ocean is. It is neccessary
+    that the owner of the harbour has set HELP GUARD or is a member of the same
+    faction.</li>
+
+    <li>A harbour will only work if it is completely built. There can be only
+    one harbour per region. The one who finishes a harbour first is the owner.
+    The incomplete harbour can be destroyed with the DESTROY order.</li>
+  </ul>
+
+  <h4><a name="academy" id="academy">Academy</a></h4>
+
+  <div align="center">
+    <table border="0" cellpadding="3">
+      <tr>
+        <td bgcolor="#DDDDDD">Costs per point of size:</td>
+        <td bgcolor="#DDDDDD">5 stones, 5 wood, 1 iron, 500 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Total cost:</td>
+        <td bgcolor="#EEEEEE">125 stones, 125 wood, 25 iron, 12500
+        silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Skill required:</td>
+        <td bgcolor="#DDDDDD">3</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Maintenance per turn:</td>
+        <td bgcolor="#EEEEEE">1000 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Maximum size:</td>
+        <td bgcolor="#DDDDDD">25</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Capacity:</td>
+        <td bgcolor="#EEEEEE">according to size</td>
+      </tr>
+    </table>
+  </div>
+
+  <ul>
+    <li>Units studying in an academy get a 33% chance to make a second attempt
+    to learn a skill, or a 66% chance when studying with a teacher.</li>
+
+    <li>Teachers also get a chance of learning. On average, this way of
+    learning takes them three times as long as normal learning when teaching the
+    maximum amount of pupils; with less pupils the effect decreases. For this
+    to work, both teachers and pupils have to be inside the same academy.</li>
+
+    <li>Learning in an academy costs 50 silver per person for skills which
+    can be normally learned without any costs and the double amount of silver
+    for skills which cost something to learn them.</li>
+
+    <li>An academy will only work if it is completely built.</li>
+  </ul>
+
+  <h4><a name="magetower" id="magetower">Mage Tower</a></h4>
+
+  <div align="center">
+    <table border="0" cellpadding="3">
+      <tr>
+        <td bgcolor="#DDDDDD">Costs per point of size:</td>
+        <td bgcolor="#DDDDDD">5 stones, 3 wood, 2 Mallorn, 3 iron, 2 Laen,
+        500 silver</td>
+      </tr>
+      <tr>
+        <td valign="top" bgcolor="#EEEEEE">Total cost:</td>
+        <td bgcolor="#EEEEEE">250 stones, 150 wood, 100 Mallorn, 150 iron,
+        100 Laen,<br />
+        25000 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Skill required:</td>
+        <td bgcolor="#DDDDDD">5</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Maintenance per turn:</td>
+        <td bgcolor="#EEEEEE">1000 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Maximum size:</td>
+        <td bgcolor="#DDDDDD">50</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Capacity:</td>
+        <td bgcolor="#EEEEEE">2 persons</td>
+      </tr>
+    </table>
+  </div>
+
+  <ul>
+    <li>Inside a mage tower, a mage regenerates 50% more mana than he usually
+    does.</li>
+
+    <li>The power of every spell casted inside a mage tower is increased as
+    if the spell was cast one level higher.</li>
+
+    <li>Casting errors or mistakes occur less often for any mage casting
+    inside a mage tower.</li>
+
+    <li>A mage tower will only work if it is completely built.</li>
+  </ul>
+
+  <h4><a name="caravanserei" id="caravanserei">Caravanserei</a></h4>
+
+  <div align="center">
+    <table border="0" cellpadding="3">
+      <tr>
+        <td bgcolor="#DDDDDD">Costs per point of size:</td>
+        <td bgcolor="#DDDDDD">1 stone, 5 wood, 1 iron, 500 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Total cost:</td>
+        <td bgcolor="#EEEEEE">10 stones, 50 wood, 10 iron, 5000 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Skill required:</td>
+        <td bgcolor="#DDDDDD">2</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Maintenance per turn:</td>
+        <td bgcolor="#EEEEEE">3000 silver, 2 Horses</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Maximum size:</td>
+        <td bgcolor="#DDDDDD">10</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Capacity:</td>
+        <td bgcolor="#EEEEEE">according to size</td>
+      </tr>
+    </table>
+  </div>
+
+  <ul>
+    <li>A caravanserei allows you to build roads in deserts. If the
+    caravanserei is destroyed, half of the roads will also be destroyed.</li>
+
+    <li>A caravanserei doubles the possible volume of trade. Its owner gets a
+    part of the profit as per the <a href="production.html#CASTLES">castle
+    rules</a>.</li>
+    <li>A caravanserei will only work if it is completely built.</li>
+  </ul>
+
+  <h4><a name="dam" id="dam">Dam</a></h4>
+
+  <div align="center">
+    <table border="0" cellpadding="3">
+      <tr>
+        <td bgcolor="#DDDDDD">Costs per point of size:</td>
+        <td bgcolor="#DDDDDD">5 stones, 10 wood, 1 iron, 500 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Total cost:</td>
+        <td bgcolor="#EEEEEE">250 stones, 500 wood, 50 iron, 25000
+        silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Skill required:</td>
+        <td bgcolor="#DDDDDD">4</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Maintenance per turn:</td>
+        <td bgcolor="#EEEEEE">1000 silver, 3 wood</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Maximum size:</td>
+        <td bgcolor="#DDDDDD">50</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Capacity:</td>
+        <td bgcolor="#EEEEEE">according to size</td>
+      </tr>
+    </table>
+  </div>
+
+  <ul>
+    <li>A dam allows you to build roads in swamps. If the dam is destroyed,
+    half of the roads will also be destroyed.</li>
+
+    <li>A dam will only work if it is completely built.</li>
+  </ul>
+
+  <h4><a name="tunnel" id="tunnel">Tunnel</a></h4>
+
+  <div align="center">
+    <table border="0" cellpadding="3">
+      <tr>
+        <td bgcolor="#DDDDDD">Costs per point of size:</td>
+        <td bgcolor="#DDDDDD">10 stones, 5 wood, 1 iron, 300 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Total cost:</td>
+        <td bgcolor="#EEEEEE">1000 stones, 500 wood, 100 iron, 30000
+        silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Skill required:</td>
+        <td bgcolor="#DDDDDD">6</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Maintenance per turn:</td>
+        <td bgcolor="#EEEEEE">100 silver, 2 stones</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Maximum size:</td>
+        <td bgcolor="#DDDDDD">100</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Capacity:</td>
+        <td bgcolor="#EEEEEE">according to size</td>
+      </tr>
+    </table>
+  </div>
+
+  <ul>
+    <li>A tunnel allows you to build roads in glaciers. If the tunnel is
+    destroyed, half of the roads will also be destroyed.</li>
+
+    <li>A tunnel will only work if it is completely built.</li>
+  </ul>
+
+  <h4><a name="inn" id="inn">Inn</a></h4>
+
+  <div align="center">
+    <table border="0" cellpadding="3">
+      <tr>
+        <td bgcolor="#DDDDDD">Costs per point of size:</td>
+        <td bgcolor="#DDDDDD">4 stone, 3 wood, 1 iron, 200 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Skill required:</td>
+        <td bgcolor="#EEEEEE">2</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Maintenance per turn:</td>
+        <td bgcolor="#DDDDDD">5 silver per point of size</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Maximum size:</td>
+        <td bgcolor="#EEEEEE">None</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Capacity:</td>
+        <td bgcolor="#DDDDDD">according to size</td>
+      </tr>
+    </table>
+  </div>
+
+  <ul>
+    <li>Units inside an inn regenerate their hit points 50% faster than
+    normal.</li>
+
+    <li>All persons inside an Inn need 14 silver per round to live instead of
+    the normal 10 silver per round.</li>
+  </ul>
+
+  <h4><a name="monument" id="monument">Monument</a></h4>
+
+  <div align="center">
+    <table border="0" cellpadding="3">
+      <tr>
+        <td bgcolor="#DDDDDD">Costs per point of size:</td>
+        <td bgcolor="#DDDDDD">1 stone, 1 wood, 1 iron, 400 silver</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Skill required:</td>
+        <td bgcolor="#EEEEEE">4</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Maintenance per turn:</td>
+        <td bgcolor="#DDDDDD">None</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EEEEEE">Maximum size:</td>
+        <td bgcolor="#EEEEEE">None</td>
+      </tr>
+      <tr>
+        <td bgcolor="#DDDDDD">Capacity:</td>
+        <td bgcolor="#DDDDDD">according to size</td>
+      </tr>
+    </table>
+  </div>
+
+  <ul>
+    <li>The name and the description of the monument can only be entered
+    once. This can never be changed again.</li>
+
+    <li>The monument has no in-game functionality.</li>
+
+    <li>A monument without anyone inside it will fall down by 10% of total
+    size (but at least by 1 point of size) per round.</li>
+  </ul>
+</body>
+</html>

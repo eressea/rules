@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 1st August 2004), see www.w3.org" />
+  <meta content="text/html; charset=utf-8" />
+  <meta name="keywords" content="Eressea" />
+  <meta name="author" content="Henning Peters - faroul@gmx.de" />
+  <meta name="abstract" content="Eressea Documentation - Alchemy" />
+
+  <title>Alchemy</title>
+  <link rel="stylesheet" type="text/css" href="eressea.css" />
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#F82866" vlink="#0000DA" alink=
+"#F82866">
+
+  <h1>Alchemy and Herbalism</h1>
+
+  <p>Alchemy potions are made from herbs and can be used by any unit. Potions
+  are made using the alchemy skill, and herbs are gathered with the herbalism
+  skill. Learning alchemy costs 200 silver, and only three people per faction
+  may learn this skill. Herbalism also costs 200 silver, but there is no
+  limit to the number of people who can know this skill.</p>
+
+  <p>Gathering herbs is essentially a kind of production, the correct order
+  to do so is <a href="orders.html#MAKE">MAKE HERBS</a>. The number of herbs
+  found depends on skill level. In addition, only one type of herb grows in
+  any one particular region. If one is not careful in harvesting, all the
+  herbs in a region can be harvested, leaving none to grow back. In this
+  case, the regional herb must be planted again using the <a href=
+  "orders.html#GROW">GROW HERBS</a> command.</p>
+
+  <p>Be careful, fresh herbs don't last forever. Herbs will rot with
+  time.</p>
+
+  <p>When an herbalist has reached level 7 in the herbalism skill, he or she
+  may make an estimate of how many herbs are left in the region.</p>
+
+  <p>Herbalism has no guarantees. Finding herbs is a long and difficult
+  process. Even with high levels in herbalism it is possible to find only
+  small amounts, or no herbs at all.</p>
+
+  <h2><a name="potions" id="potions">Potions</a></h2>
+
+  <p>Potions are made from herbs by giving the order <a href=
+  "orders.html#MAKE">MAKE &lt;name of potion&gt;</a>. At least two different
+  herbs are needed per type of potion. Every second level of skill in alchemy
+  an alchemist reaches, he or she will learn a new recipe for a potion.
+  The potion's level will be up to half of the new level in alchemy.</p>
+
+  <p>Each of your alchemists may brew <b>level_of_alchemy/level_of_potion</b>
+  potions of one type per turn.</p>
+
+  <p>The herbs growing in the world of Eressea are listed in this <a href=
+  "appendix_alchemy.html">table</a>, a list of all (as yet) existing potions
+  is found in this <a href="appendix_alchemy.html#herbs">table</a>. To help
+  minimize confusion between people speaking different languages, a third
+  <a href="appendix_alchemy.html#translation">table</a> lists the german
+  and english names of all herbs and potions.</p>
+
+  <p>Using a potion requires the order <a href=
+  "orders.html#USE"><tt>USE</tt></a>. Most potions give their benefits to the
+  unit giving the order. Exceptions are potions which affect a region, then
+  the region where the unit was at the beginning of turn is affected. Another
+  case is the "duncebuns" potion: you can apply it to a certain unit
+  with the order <a href="orders.html#USE"><tt>USE "duncebuns"
+  &lt;unit-id&gt;</tt></a>. The application of the potion fails if the
+  STEALTH skill of the acting unit is less or equal to the victim's
+  PERCEPTION+2. In this case, you get an error message and the
+  duncebuns is not used up (thus it remains where it is).</p>
+
+  <p>Normally a potion affects 10 people or 10 goods during the turn it is
+  used, as mentioned in its recipe. Its effects end at the end of the turn it
+  is used. Each turn, a unit may only use one type of potion. No two
+  different potions may affect any one unit. However, there are exceptions,
+  such as potions which are used automatically (like the healing potion after
+  a battle). Multiple potions work on more than 10 people in a unit, but in
+  any case the effect only lasts until next week. So a given unit of 50
+  people may use five potions of one type for all to gain its effect.
+  However, the effects will not last until next week, nor can the effects be
+  spread out over multiple weeks or over only certain units. A potion used on
+  a unit of 10 people will still affect all 10 people, even if that unit is
+  broken up into many smaller units.</p>
+
+  <p>If a given unit consists of 12 people, normally this will not matter.
+  The potion will work on only ten of them. The "Beserker's Blood" potion is
+  an exception because during a battle the people of a unit are treated
+  individually. If you want to use this potion make sure that <b>all</b>
+  people of the unit are affected, or it will not work!</p>
+</body>
+</html>
