@@ -1,0 +1,4 @@
+rules
+=====
+
+Rulebook for Eressea
